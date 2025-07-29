@@ -1,38 +1,38 @@
 # 🔍 Simple Port Scanner
 
-Escáner de puertos TCP en Python, con soporte para:
-- Escaneo multihilo (rápido)
-- Detección de puertos abiertos
-- Banner grabbing (identificación de servicios)
-- Exportación de resultados en JSON
+A lightweight TCP port scanner written in Python, featuring:
+- Multithreaded port scanning
+- Detection of open ports
+- Banner grabbing (basic service identification)
+- JSON output of scan results
 
 ---
 
-## 🚀 ¿Cómo funciona?
+## 🚀 How It Works
 
-El script realiza un escaneo de los primeros 1024 puertos de una IP o dominio, detecta cuáles están abiertos y si es posible, identifica el servicio mediante banner grabbing.
+The script scans the first 1024 TCP ports of a given IP or domain, detects which ones are open, and attempts to identify the service via banner grabbing.
 
 ---
 
-## ⚙️ Requisitos
+## ⚙️ Requirements
 
 - Python 3.x
-- Sistema operativo: Windows, Linux o macOS
-- Acceso a terminal
+- OS: Windows, Linux, or macOS
+- Terminal access
 
 ---
 
-## 🧪 Ejecución
+## 🧪 How to Run
 
 ```bash
-# Clona el repositorio
+# Clone the repository
 git clone https://github.com/juakincruzz/simple-port-scanner.git
 cd simple-port-scanner
 
-# Crea y activa entorno virtual (opcional)
+# Create and activate virtual environment (optional)
 python -m venv venv
-.\venv\Scripts\activate    # En Windows
-source venv/bin/activate  # En Linux/macOS
+.\venv\Scripts\activate    # On Windows
+source venv/bin/activate  # On Linux/macOS
 
-# Ejecuta el escáner
+# Run the scanner
 python scanner.py
